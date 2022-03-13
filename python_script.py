@@ -1,4 +1,5 @@
 import git
+import os
 repo = git.Repo('C:\ProgramData\Jenkins\.jenkins\workspace\git_python\task')
 print('Remotes:')
 for remote in repo.remotes:
