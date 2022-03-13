@@ -22,6 +22,6 @@ if repo.is_dirty(untracked_files=True):
   for branch in repo.branches:
     print(branch)
   # repo.git.checkout('main')
-  #print(repo.remotes.origin.push())
+  print(repo.remotes.origin.push())
 else:
   print("No Changes")
