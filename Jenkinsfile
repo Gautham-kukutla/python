@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 bat'''rm -rf task
-                git clone git@github.com:Gautham-kukutla/python.git task
+                git clone https://github.com/Gautham-kukutla/python.git task
                 '''
             }
         }
