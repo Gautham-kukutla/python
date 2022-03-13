@@ -1,6 +1,6 @@
 import git
 import os
-repo = git.Repo('c/ProgramData/Jenkins/.jenkins/workspace/git_python/task')
+repo = git.Repo('task')
 print('Remotes:')
 for remote in repo.remotes:
     print(f'- {remote.name} {remote.url}')
