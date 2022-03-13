@@ -1,5 +1,9 @@
 import git
 import os
+
+class ProgressPrinter(git.RemoteProgress):
+    def line_dropped(self, line):
+        print("line dropped : " + str(line))
 print("Repo before")
 repo = git.Repo('')
 print("Repo after")
@@ -19,6 +23,6 @@ if repo.is_dirty(untracked_files=True):
   repo.git.add(all=True)
   repo.index.commit("Commit Done")
   print("pushing")
-  print(repo.remotes.origin.push())
+  print(repo.remotes.origin.push(progress=ProgressPrinter()))
 else:
   print("No Changes")
