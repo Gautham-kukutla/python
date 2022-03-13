@@ -19,8 +19,9 @@ if repo.is_dirty(untracked_files=True):
   repo.git.add(all=True)
   repo.index.commit("Commit Done")
   print("pushing")
-  for branch in repo.branches:
-    print(branch)
+  f = open("changes.txt", "x")
+  #for branch in repo.branches:
+  #  print(branch)
   # repo.git.checkout('main')
   print(repo.remotes.origin.push())
   #repo.git.push('--set-upstream', 'origin', 'main')
