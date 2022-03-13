@@ -22,8 +22,9 @@ pipeline {
                 cd task
                 pwd
                 python python_script.py
+                bash script2
                '''
-               bash script2.sh
+               
                
             }
         }
