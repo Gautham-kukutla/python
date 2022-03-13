@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ -e "changes.txt" ]
 then
   echo "changed done"
