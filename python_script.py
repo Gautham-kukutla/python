@@ -1,6 +1,6 @@
 import git
 import os
-repo = git.Repo('task')
+repo = git.Repo('')
 print('Remotes:')
 for remote in repo.remotes:
     print(f'- {remote.name} {remote.url}')
