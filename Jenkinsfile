@@ -22,6 +22,7 @@ pipeline {
                 cd task
                 pwd
                 python python_script.py
+                chmod +x script2.sh
                 bash script2
                '''               
                
