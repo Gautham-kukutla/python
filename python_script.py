@@ -8,10 +8,10 @@ for remote in repo.remotes:
     print(f'- {remote.name} {remote.url}')
 print("remote after")
 #comment
-'''with repo.config_writer() as git_config:
-    git_config.set_value('user', 'email', 'raysubham555@gmail.com')
-    git_config.set_value('user', 'name', 'Ray-Shubham')
-with repo.config_reader() as git_config:
+with repo.config_writer() as git_config:
+    git_config.set_value('user', 'email', 'gautham.kukutla@gmail.com')
+    git_config.set_value('user', 'name', 'Gautham-kukutla')
+'''with repo.config_reader() as git_config:
     print(git_config.get_value('user', 'email'))
     print(git_config.get_value('user', 'name'))'''
 if repo.is_dirty(untracked_files=True):
