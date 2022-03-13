@@ -23,8 +23,7 @@ pipeline {
                 pwd
                 python python_script.py
                 bash script2
-               '''
-               
+               '''               
                
             }
         }
