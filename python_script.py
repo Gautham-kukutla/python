@@ -1,10 +1,12 @@
 import git
 import os
+print("Repo before")
 repo = git.Repo('')
+print("Repo after")
 print('Remotes:')
 for remote in repo.remotes:
     print(f'- {remote.name} {remote.url}')
-
+print("remote after")
 #comment
 '''with repo.config_writer() as git_config:
     git_config.set_value('user', 'email', 'raysubham555@gmail.com')
