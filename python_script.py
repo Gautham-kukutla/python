@@ -1,7 +1,7 @@
 import git
 import os
 print("Repo before")
-repo = git.Repo('C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\git_python2\\task')
+repo = git.Repo('/var/lib/jenkins/workspace/pythongit/task')
 print("Repo after")
 print('Remotes:')
 for remote in repo.remotes:
