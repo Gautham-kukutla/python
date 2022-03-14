@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "entered shell script"
 if [ -e "changes.txt" ]
 then
